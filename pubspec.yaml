@@ -1,0 +1,95 @@
+name: aaysha_stores
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.0
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.0.0
+
+  # Firebase
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.1.0
+  firebase_storage: ^12.1.0
+
+  # Local Database
+  # SQLite removed: replaced by file-backed storage
+  path: ^1.8.0
+
+  # Barcode Scanning & Generation
+  mobile_scanner: ^3.5.0
+  barcode: ^2.2.0
+  qr_flutter: ^4.0.0
+
+  # Excel Export
+  excel: ^2.1.0
+
+  # PDF Generation
+  pdf: ^3.10.0
+  printing: ^5.11.0
+
+  # Image Handling
+  image_picker: ^1.0.0
+  cached_network_image: ^3.3.0
+  path_provider: ^2.1.0
+  barcode_widget: ^2.0.1
+
+  # Notifications
+  flutter_local_notifications: ^17.2.4
+  timezone: ^0.9.0
+
+  # Network & Connectivity
+  connectivity_plus: ^5.0.0
+  http: ^1.1.0
+
+  # UI & Animations
+  animations: ^2.0.0
+  shimmer: ^3.0.0
+  fl_chart: ^0.64.0
+  lottie: ^2.7.0
+
+  # Localization
+  intl: ^0.20.0
+
+  # Utilities
+  get_it: ^7.6.0
+  shared_preferences: ^2.2.0
+  uuid: ^4.0.0
+  logger: ^2.0.0
+  flutter_dotenv: ^5.1.0
+  permission_handler: ^11.4.0
+  file_picker: ^11.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.0
+  flutter_launcher_icons: ^0.14.3 
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - .env
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#10B981"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
